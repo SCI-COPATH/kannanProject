@@ -48,6 +48,9 @@ void loop(){
     Serial.println("RIGHT");
     servoB.write(angle3);
     servoA.write(MIN_ANGLE);
+  }else{
+    servoB.write(MIN_ANGLE);
+    servoA.write(MIN_ANGLE);
   }
   
 }
